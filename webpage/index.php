@@ -13,7 +13,11 @@
     <header>
         <a href="#" class="logo">NoteMaster</a>
         
-        <nav>
+       <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav class="nav-links">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
