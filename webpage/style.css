@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+nav a:hover,
+nav a.active {
+    color: rgb(98, 1, 1);
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(24, 24, 24);
+    color: #fff;
+    font-weight: 700;
+}
+
+#home{
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.799),rgba(0, 0, 0, 0.722)), url('./pngtree-a-notepad-close-to-a-pencil-image_13101408.jpg') no-repeat center / cover;
+}
+
+.container{
+    width: 60%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1{
+    font-size: 40px;
+    margin-bottom: 3vh;
+}
+
+.container button{
+    width: 25%;
+    text-align: center;
+    margin-top: 5vh;
+    padding: 2vh;
+    font-size: 18px;
+    border-radius: 1vh;
+    border: none;
+    color: white;
+    background-color: rgba(98, 1, 1, 0.626);
+}
+.container button a{
+    text-decoration: none;
+    color: white;
+}
+
+.container button:hover{
+    background-color: rgb(98, 1, 1);
+}
+
+.container button:active{
+    background-color: black;
+}
+
+.container2{
+    width: 80%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container2 h1{
+    font-size: 40px;
+    margin-bottom: 4vh;
+}
+
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black 50% ,rgb(170, 170, 170) 1% , white 49% );
+}
+
+.container3{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container3 .box{
+    position: relative;
+    width: 320px;
+    background-color: rgb(221, 221, 221);
+    padding:100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+    color: black;
+}
+
+.container3 .box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(98, 1, 1);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+
+}
+
+.container3 .box:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.container3 .box h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 3.5em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: .01;
+    transition: 0.5s;
+}
+
+.container3 .box:hover h2{
+    opacity: 1;
+    color: white;
+    transform: translateY(-40px);
+    cursor: pointer;
+}
+
+.container3 .box h3{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.container3 .box p{
+    position: relative;
+    z-index: 2;
+    color: #555;
+    transition: 0.5s;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+.container3 .box:hover h3,
+.container3 .box:hover p
+{
+    color: white;
+}
+
+
+#contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.799),rgba(0, 0, 0, 0.722)), url('./pngtree-a-notepad-close-to-a-pencil-image_13101408.jpg') no-repeat center / cover;
+    
+}
+
+.container4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_info{
+    color: white;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.contact_info i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact_form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact_info, .contact_form{
+    flex: 1;
+}
+
+.contact_form h2{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact_form .text_box{
+    background: black;
+    color: white;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+    opacity: .9;
+}
+
+.contact_form .text_box:first-child{
+    margin-right: 15px;
+}
+
+.contact_form textarea{
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+    opacity: .9;
+}
+
+.contact_form .send_btn{
+    float: right;
+    background: rgba(98, 1, 1, 0.815);
+    color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.contact_form .send_btn:hover{
+    background-color:rgb(98, 1, 1) ;
+    cursor: pointer;
+}

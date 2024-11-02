@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #620101;  /* Updated to use hex color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 90%;
+    max-width: 400px;  
+    margin: 2vh auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 4vh;
+    border-radius: 15px;  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);  
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);  
+}
+
+form h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #620101;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    background-color: #fff;
+    border-color: #620101;
+    outline: none;
+    box-shadow: 0 0 8px rgba(98, 1, 1, 0.3);  
+}
+
+form input::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+
+.button {
+    width: 50%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #620101;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #450000;  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  
+}
+
+.button:active {
+    background-color: #000;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+} 
+
+form button {
+    border: none;
+    text-decoration: none;
+    color: rgb(67, 0, 0);
+    font-size: 15px;
+    background-color: transparent;
+    padding: 2vh;
+}
+
+
+
+form span {
+    
+    margin-left: 5%;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        padding: 3vh;
+    }
+
+    form h1 {
+        font-size: 28px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+}
