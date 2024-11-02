@@ -7,6 +7,8 @@ NoteMaster is your ultimate digital notebook, designed to help you capture and o
 
 At NoteMaster, we understand the importance of efficient note-taking. This project is designed to help you organize and prioritize your notes with ease. It features a modern, responsive UI and supports user authentication, CRUD operations for notes, and cloud synchronization for secure access anywhere.
 
+![enter image description here](https://s8.uupload.ir/files/screenshot_%289%29_mvb.png)![enter image description here](https://s8.uupload.ir/files/screenshot_%2812%29_o17y.png)
+![enter image description here](https://s8.uupload.ir/files/screenshot_%2813%29_362.png)
 ---
 
 ## Features
