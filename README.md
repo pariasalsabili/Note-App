@@ -14,7 +14,7 @@ At NoteMaster, we understand the importance of efficient note-taking. This proje
 ## Features
 
   1. **Modern Landing Page**
-    - Home Section: Welcomes users with a clean design and a call-to-action button for signing in or registering.
+    - Home Section: Welcomes users with a responsive, clean design and a call-to-action button for signing in or registering.
     - About Section: Provides insight into the purpose and mission of NoteMaster.
     - Services Section: Highlights the key features, such as easy note creation, organized management, and cloud synchronization.
     - Contact Section: A form for user inquiries with fields for name, email, and message.
